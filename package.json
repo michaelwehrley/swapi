@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
-    "test": "mocha"
+    "watch:test": "./node_modules/.bin/mocha --watch",
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,21 @@
   "devDependencies": {
     "chai": "4.0.2",
     "eslint": "4.0.0",
-    "mocha": "3.4.2"
+    "mocha": "3.4.2",
+    "nyc": "11.0.2"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100,
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "include": [
+      "src"
+    ]
   }
 }
