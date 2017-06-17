@@ -1,5 +1,10 @@
 # Swapi
 
+## Setup
+
+1. Install node modules: `$ npm install`
+2. Run everything else: `$ npm run validate`
+
 ## Testing
 
 Mocha (the testing framework) and Chai (Node's built in assertion library).
