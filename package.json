@@ -1,5 +1,5 @@
 {
-  "name": "uptake-swapi",
+  "name": "swapi",
   "version": "1.0.0",
   "description": "A simple library used to request and display StarWars info",
   "main": "src/index.js",
@@ -9,19 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaelwehrley/uptake-swapi.git"
+    "url": "git+https://github.com/michaelwehrley/swapi.git"
   },
   "keywords": [
-    "Uptake",
     "SWAPI",
     "Star Wars API"
   ],
   "author": "Michael S. Wehrley <michael.wehrley@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/michaelwehrley/uptake-swapi/issues"
+    "url": "https://github.com/michaelwehrley/swapi/issues"
   },
-  "homepage": "https://github.com/michaelwehrley/uptake-swapi#readme",
+  "homepage": "https://github.com/michaelwehrley/swapi#readme",
   "devDependencies": {
     "chai": "4.0.2",
     "eslint": "4.0.0",
