@@ -1,4 +1,4 @@
-{
+const FILMS = {
 	"count": 7,
 	"next": null,
 	"previous": null,
@@ -539,4 +539,6 @@
 			"url": "http://swapi.co/api/films/7/"
 		}
 	]
-}
+};
+
+export default FILMS;

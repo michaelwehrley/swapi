@@ -8,7 +8,7 @@
     "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "lint": "./node_modules/.bin/eslint .",
     "watch:test": "./node_modules/.bin/mocha --watch",
-    "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha",
+    "test": "cross-env NODE_ENV=test nyc mocha",
     "validate": "npm-run-all --parallel lint test build"
   },
   "repository": {
@@ -30,8 +30,11 @@
   "homepage": "https://github.com/michaelwehrley/swapi#readme",
   "devDependencies": {
     "babel-cli": "6.24.1",
+    "babel-plugin-istanbul": "4.1.4",
     "babel-preset-es2015": "6.24.1",
+    "babel-register": "6.24.1",
     "chai": "4.0.2",
+    "cross-env": "5.0.1",
     "eslint": "4.0.0",
     "ghooks": "2.0.0",
     "mocha": "3.4.2",
@@ -48,6 +51,11 @@
     "reporter": [
       "text",
       "lcov"
+    ],
+    "instrument": false,
+    "sourceMap": false,
+    "require": [
+      "babel-register"
     ],
     "include": [
       "src"
