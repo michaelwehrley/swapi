@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
     "watch:test": "./node_modules/.bin/mocha --watch",
-    "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha",
+    "validate": "npm-run-all --parallel lint test"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "chai": "4.0.2",
     "eslint": "4.0.0",
     "mocha": "3.4.2",
+    "npm-run-all": "4.0.2",
     "nyc": "11.0.2"
   },
   "nyc": {
