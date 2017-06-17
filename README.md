@@ -1,5 +1,11 @@
 # Swapi
 
+## Publish
+
+`$ npm pack`
+
+Files to include are in package.json via the key "files"
+
 ## Setup
 
 1. Install node modules: `$ npm install`

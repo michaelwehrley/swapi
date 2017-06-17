@@ -2,7 +2,7 @@
   "name": "swapi",
   "version": "1.0.0",
   "description": "A simple library used to request and display StarWars info",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel --copy-files --out-dir dist --ignore *.test.js src",
@@ -18,6 +18,9 @@
   "keywords": [
     "SWAPI",
     "Star Wars API"
+  ],
+  "files": [
+    "dist"
   ],
   "author": "Michael S. Wehrley <michael.wehrley@gmail.com>",
   "license": "MIT",
