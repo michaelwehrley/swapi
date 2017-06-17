@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/michaelwehrley/uptake-swapi#readme",
   "devDependencies": {
-    "eslint": "4.0.0"
+    "chai": "4.0.2",
+    "eslint": "4.0.0",
+    "mocha": "3.4.2"
   }
 }
